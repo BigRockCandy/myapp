@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "strict": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./src/.umi/*"],
+      "@umijs/max": ["./node_modules/umi"],
+      "@umijs/max/typings": ["./src/.umi/typings"],
+      "@base/*": ["./node_modules/react-base-client/src/*"]
+    }
+  },
+  "include": [
+    "mock/**/*",
+    "src/**/*",
+    "config/**/*",
+    "node_modules/react-base-client/src/**/*",
+    "node_modules/react-base-client/config/**/*"
+  ]
+}
